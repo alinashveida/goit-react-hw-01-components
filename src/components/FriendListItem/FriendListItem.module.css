@@ -1,0 +1,40 @@
+.item {
+  margin-bottom: 20px;
+  width: 25%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  box-shadow: 7px 7px 7px rgb(0 0 0 / 30%);
+}
+
+.isOnline {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: green;
+}
+
+.isOffline {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+}
+
+img {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
