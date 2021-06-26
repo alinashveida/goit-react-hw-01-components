@@ -20,7 +20,7 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={statisticalData[0]} />
+      <Statistics title="Upload stats" stats={statisticalData} />
 
       <FriendList friends={friends} />
 
