@@ -1,7 +1,7 @@
 .profile {
   width: 300px;
-  height: 400px;
-  align-items: center;
+  height: 350px;
+
   border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
@@ -11,10 +11,7 @@
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
-
-  /* align-items: center;
-  justify-content: center;
-  margin: auto; */
+  text-align: center;
 }
 
 img {
@@ -41,10 +38,16 @@ img {
   display: grid;
 }
 
-ul {
-  list-style: none;
-}
-
 .stats {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.quantity {
+  justify-content: center;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
 }

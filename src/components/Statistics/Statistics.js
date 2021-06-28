@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import css from "./Statistics.module.css";
 
 export default function Statistics({ title, stats }) {
@@ -8,7 +7,10 @@ export default function Statistics({ title, stats }) {
 
       <ul className={css.statList}>
         {stats.map((stat) => (
-          <li className={css.item}>
+          <li
+            style={{ backgroundColor: get_rand_color() }}
+            className={css.item}
+          >
             <span className={css.label}>{stat.label}</span>
             <span className={css.percentage}>{stat.percentage}%</span>
           </li>
@@ -16,4 +18,9 @@ export default function Statistics({ title, stats }) {
       </ul>
     </section>
   );
+}
+
+function get_rand_color() {
+  const color = Math.floor(Math.random() * 16777216).toString(16);
+  return "#000000".slice(0, -color.length) + color;
 }
